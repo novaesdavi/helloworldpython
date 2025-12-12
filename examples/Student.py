@@ -7,4 +7,8 @@ class Student(Person):
         self.student_id = student_id
 
     def get_student_info(self):
-        return f"Name: {self.first_name} {self.last_name} , Age: {self.age}, Student ID: {self.student_id}"
+        texto1 = f"Name: {self.first_name} {self.last_name} , Age: {self.age}, Student ID: {self.student_id}"
+        texto2 = "/n" + self.say_hello()
+
+        return texto1 + texto2
+        

@@ -13,6 +13,9 @@ class Person:
 
     def greet(self) -> str:
         return f"Hello, my name is {self.full_name}."
+    
+    def say_hello(self) -> str:
+        return "Olá!!!!"
 
     def __repr__(self) -> str:
         return f"Person({self.first_name!r}, {self.last_name!r}, age={self.age})"
