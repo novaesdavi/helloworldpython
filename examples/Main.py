@@ -13,5 +13,8 @@ if __name__ == "__main__":
     s = Student("Davi", "Novaes", 22, "S12345")
     print(s.get_student_info())
 
+    # Instancia `second_main` para executar seu __init__ e chamar teste()
+    second_main()
+
     print(sys.path)
     
