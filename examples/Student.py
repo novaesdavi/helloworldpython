@@ -1,6 +1,5 @@
 from Person import Person
 
-
 class Student(Person):
     def __init__(self, first_name, last_name, age, student_id):
         super().__init__(first_name, last_name, age)
@@ -8,7 +7,7 @@ class Student(Person):
 
     def get_student_info(self):
         texto1 = f"Name: {self.first_name} {self.last_name} , Age: {self.age}, Student ID: {self.student_id}"
-        texto2 = "/n" + self.say_hello()
+        texto2 = "\n" + self.say_hello()
 
         return texto1 + texto2
         
