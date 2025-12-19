@@ -1,3 +1,4 @@
+
 class Person:
     # class variable
     species = "Homo sapiens"
@@ -29,14 +30,3 @@ class Person:
     @staticmethod
     def is_adult(age: int) -> bool:
         return age >= 18
-
-
-if __name__ == "__main__":
-    p = Person("Alice", "Silva", 30)
-    print(p)                        # Person('Alice', 'Silva', age=30)
-    print(p.greet())                # Hello, my name is Alice Silva.
-    print("Species:", Person.species)
-    print("Is adult:", Person.is_adult(p.age))
-
-    p2 = Person.from_full_name("Joao Neto", 16)
-    print(p2, "-> adult?", Person.is_adult(p2.age))
